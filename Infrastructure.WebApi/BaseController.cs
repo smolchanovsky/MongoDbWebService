@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using Infrastructure.BLL;
 using Infrastructure.Common;
+using Infrastructure.ServiceLayer;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Infrastructure.WebApi
