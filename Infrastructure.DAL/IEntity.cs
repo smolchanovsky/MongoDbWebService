@@ -1,4 +1,4 @@
-﻿namespace Infrastructure.Common
+﻿namespace Infrastructure.DAL
 {
    public interface IEntity
     {

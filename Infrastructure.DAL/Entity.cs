@@ -2,7 +2,7 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace Infrastructure.Common
+namespace Infrastructure.DAL
 {
     /// <summary>
     /// Base class for any identifiable object.
