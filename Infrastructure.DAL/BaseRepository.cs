@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Infrastructure.Common;
 using Infrastructure.DAL.Connection;
 using MongoDB.Driver;
@@ -13,7 +15,7 @@ namespace Infrastructure.DAL
     {
         private readonly IDbConnectionFactory _dbConnectionFactory;
         protected IMongoDatabase DbConnection => _dbConnectionFactory.Create();
-        protected IMongoCollection<TDomain> Collection => DbConnection.GetCollection<TDomain>(typeof(TDomain).GetCollectionName());
+        protected IMongoCollection<TDomain> Collection => DbConnection.GetCollection<TDomain>(GetCollectionName<TDomain>());
 
         public BaseRepository(IDbConnectionFactory dbConnectionFactory)
         {
@@ -75,5 +77,14 @@ namespace Infrastructure.DAL
                 .Limit(pageSize)
                 .ToList();
         }
-    }
+
+	    public static string GetCollectionName<T>()
+	    {
+		    return typeof(T)
+			    .GetCustomAttributes(true)
+			    .OfType<CollectionNameAttribute>()
+			    .FirstOrDefault()?
+			    .CollectionName;
+	    }
+	}
 }

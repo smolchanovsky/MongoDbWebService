@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Infrastructure.Common;
+﻿using Infrastructure.Common;
+using System.Collections.Generic;
 
 namespace Infrastructure.DAL
 {

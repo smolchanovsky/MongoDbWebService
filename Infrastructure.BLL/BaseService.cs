@@ -47,7 +47,7 @@ namespace Infrastructure.BLL
 
         public virtual TDto GetById(string id)
         {
-            if (String.IsNullOrEmpty(id))
+            if (string.IsNullOrEmpty(id))
                 throw new ArgumentNullException(nameof(id), ExceptionMessages.IdIsEmpty);
 
             return _mapper.Map<TDto>(_baseRepository.GetById(id));
@@ -72,7 +72,7 @@ namespace Infrastructure.BLL
 
         public virtual bool Delete(string id)
         {
-            if (String.IsNullOrEmpty(id))
+            if (string.IsNullOrEmpty(id))
                 throw new ArgumentNullException(nameof(id), ExceptionMessages.IdIsEmpty);
 
             return _baseRepository.Delete(id);

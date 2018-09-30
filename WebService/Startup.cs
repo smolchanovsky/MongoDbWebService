@@ -1,6 +1,4 @@
-﻿using BLL;
-using BLL.Map;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,7 +11,6 @@ namespace WebService
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            AutoMapperConfiguration.Configure();
         }
 
         public IConfiguration Configuration { get; }

@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
-using Infrastructure.Common;
 using Infrastructure.DAL;
 using Moq;
 using Xunit;

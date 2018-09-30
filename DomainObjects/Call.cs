@@ -1,6 +1,5 @@
 ﻿using System;
 using DomainObjects.Enums;
-using Infrastructure.Common;
 using Infrastructure.DAL;
 using MongoDB.Bson.Serialization.Attributes;
 
