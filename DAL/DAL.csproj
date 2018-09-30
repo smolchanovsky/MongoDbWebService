@@ -15,9 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="1.50.4" />
+    <PackageReference Include="Dapper" Version="1.50.5" />
     <PackageReference Include="DapperExtensions.DotnetCore" Version="1.0.1" />
-    <PackageReference Include="MongoDB.Driver" Version="2.5.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.7.0" />
   </ItemGroup>
 
   <ItemGroup>
