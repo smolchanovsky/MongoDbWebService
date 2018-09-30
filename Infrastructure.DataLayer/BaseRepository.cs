@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Infrastructure.Common;
-using Infrastructure.DAL.Connection;
+using Infrastructure.DataLayer.Connection;
 using MongoDB.Driver;
 
-namespace Infrastructure.DAL
+namespace Infrastructure.DataLayer
 {
     /// <summary>
     /// The base  <a href="https://www.mongodb.com">MongoDb</a> repository that implements a common functional.
